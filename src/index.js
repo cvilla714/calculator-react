@@ -1,3 +1,4 @@
+/* eslint-disable import/newline-after-import */
 /* eslint-disable quotes */
 import React from "react";
 import ReactDOM from "react-dom";
