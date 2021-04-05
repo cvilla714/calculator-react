@@ -1,3 +1,5 @@
+/* eslint-disable react/prefer-stateless-function */
+// eslint-disable-next-line quotes
 import React from "react";
 
 class App extends React.Component {
