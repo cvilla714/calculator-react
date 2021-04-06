@@ -1,14 +1,11 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable quotes */
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Button from './Button';
 
-const nums1 = ["AC", "+/-", "%", "÷"];
-const nums2 = [7, 8, 9, "*"];
-const nums3 = [4, 5, 6, "-"];
-const nums4 = [1, 2, 3, "+"];
-const nums5 = [0, ".", "="];
+const nums1 = ['AC', '+/-', '%', '÷'];
+const nums2 = [7, 8, 9, '*'];
+const nums3 = [4, 5, 6, '-'];
+const nums4 = [1, 2, 3, '+'];
+const nums5 = [0, '.', '='];
 
 function ButtonPanel() {
   return (
