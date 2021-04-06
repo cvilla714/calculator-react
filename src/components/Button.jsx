@@ -1,11 +1,9 @@
-/* eslint-disable quotes */
-
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Button({ name }) {
-  const symbols = name === "÷" || name === "*" || name === "-" || name === "+" || name === "=" ? "orange" : "";
-  const bigN = name === 0 ? "bigN" : "";
+  const symbols = name === '÷' || name === '*' || name === '-' || name === '+' || name === '=' ? 'orange' : '';
+  const bigN = name === 0 ? 'bigN' : '';
   return (
     <button type="button" className={`${symbols} ${bigN}`}>
       {name}
@@ -18,7 +16,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  name: "",
+  name: '',
 };
 
 export default Button;
