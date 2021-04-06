@@ -1,8 +1,5 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable no-unused-vars */
 /* eslint-disable quotes */
 import React from "react";
-import Button from "./Button";
 import ButtonPanel from "./ButtonPanel";
 import Display from "./Display";
 
@@ -12,7 +9,7 @@ function App() {
       <h1 className="title">Project Calculator</h1>
 
       <div className="calculator">
-        <Display />
+        <Display result={0} />
         <ButtonPanel />
       </div>
     </div>
