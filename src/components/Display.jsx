@@ -1,12 +1,21 @@
 /* eslint-disable quotes */
+import PropTypes from "prop-types";
 import React from "react";
 
-function Display() {
+function Display({ result }) {
   return (
     <div id="display" className="display">
-      150
+      {result}
     </div>
   );
 }
+
+Display.propTypes = {
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: 0,
+};
 
 export default Display;
