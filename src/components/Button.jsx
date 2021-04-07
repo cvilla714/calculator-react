@@ -3,7 +3,7 @@ import React from 'react';
 
 function Button({ name, handleClick }) {
   const symbols = name === '÷' || name === '*' || name === '-' || name === '+' || name === '=' ? 'orange' : '';
-  const bigN = name === 0 ? 'bigN' : '';
+  const bigN = name === '0' ? 'bigN' : '';
   return (
     <button
       type="button"
