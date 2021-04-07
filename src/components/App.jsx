@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
+import calculate from '../logic/calculate';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <h1 className="title">Project Calculator</h1>
 
       <div className="calculator">
-        <Display result={0} />
+        <Display result={calculate} />
         <ButtonPanel />
       </div>
     </div>
