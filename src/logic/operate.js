@@ -9,7 +9,7 @@ const operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '%':
-      total = num1.mod(num2);
+      total = num1.times(num2.div(100));
       break;
 
     case '÷':
