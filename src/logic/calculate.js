@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import operate from './operate';
 
 function calculate(data, buttonName) {
@@ -25,15 +26,13 @@ function calculate(data, buttonName) {
       result = {
         total,
         next,
-        operation: operation ? (operation = buttonName.toString())
-          : (operation = buttonName.toString()),
+        operation: operation ? (operation = buttonName.toString()) : (operation = buttonName.toString()),
       };
     } else if (next) {
       result = {
         total: operate(total, next, operation),
         next: null,
-        operation: operation ? (operation = buttonName.toString())
-          : (operation = buttonName.toString()),
+        operation: operation ? (operation = buttonName.toString()) : (operation = buttonName.toString()),
       };
     }
   }
