@@ -1,11 +1,10 @@
 # Project: Calculator
 
 > Project was about creating a calculator with React
-
 ![screenshot](./app_screenshot.png)
 
 ## Built With
-
+- CSS
 - Javascript
 - React
 
@@ -54,4 +53,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT]() licensed.
+This project is [MIT](https://github.com/cvilla714/calculator-react/blob/development/LICENSE) licensed.
