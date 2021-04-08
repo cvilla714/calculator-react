@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import operate from './operate';
 
 function calculate(data, buttonName) {
