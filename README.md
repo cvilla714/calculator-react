@@ -2,7 +2,7 @@
 
 > Project was about creating a calculator with React
 
-![screenshot]()
+![screenshot](./app_screenshot.png)
 
 ## Built With
 
