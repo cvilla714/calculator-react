@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import Navbar from './Navbar';
 
 const App = () => {
   const [calculator, setCalculator] = useState({
@@ -17,17 +19,20 @@ const App = () => {
   const { total, next, operation } = calculator;
 
   return (
-    <div>
-      <h1 className="title">Project Calculator</h1>
+    <div className="container-fluid large">
+      <Navbar />
 
-      <div className="calculator">
-        <Display
-          result={`${total || ''}
+      <div>
+        <h1 className="title">Project Calculator</h1>
+        <div className="calculator">
+          <Display
+            result={`${total || ''}
           ${operation || ''}
           ${(total && next) || ''}
           `}
-        />
-        <ButtonPanel clickHandler={handleClick} />
+          />
+          <ButtonPanel clickHandler={handleClick} />
+        </div>
       </div>
     </div>
   );
