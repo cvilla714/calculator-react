@@ -6,8 +6,10 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 function Navigation() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Math Magicians</Navbar.Brand>
+    <Navbar bg="light" expand="lg" className="top">
+      <Navbar.Brand href="#home" className="main-title">
+        Math Magicians
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
