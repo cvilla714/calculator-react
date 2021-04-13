@@ -19,16 +19,20 @@ const App = () => {
 
   return (
     <div className="container-fluid large">
-      <div className="d-flex">
-        <h1 className="title mt-5 ml-5">Project Calculator</h1>
-        <div className="calculator mt-5">
-          <Display
-            result={`${total || ''}
+      <div className="row">
+        <div className="col-sm-12 col-md-6">
+          <h1 className="title mt-5 ml-5">Project Calculator</h1>
+        </div>
+        <div className="col-sm-12 col-md-6">
+          <div className="calculator mt-5">
+            <Display
+              result={`${total || ''}
           ${operation || ''}
           ${(total && next) || ''}
           `}
-          />
-          <ButtonPanel clickHandler={handleClick} />
+            />
+            <ButtonPanel clickHandler={handleClick} />
+          </div>
         </div>
       </div>
     </div>
