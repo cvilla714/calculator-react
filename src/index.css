@@ -92,3 +92,15 @@ button:focus {
 .toggle {
   height: auto;
 }
+
+.top {
+  min-height: 6.25rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
