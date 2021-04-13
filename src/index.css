@@ -88,3 +88,7 @@ button:focus {
 .group1 {
   width: 43.75rem;
 }
+
+.toggle {
+  height: auto;
+}
