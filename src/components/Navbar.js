@@ -7,7 +7,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 function Navigation() {
   return (
     <Navbar bg="light" expand="lg" className="top">
-      <Navbar.Brand href="#home" className="main-title text-warning ml-5">
+      <Navbar.Brand href="#home" className="main-title text-warning ml-lg-5">
         Math Magicians
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
