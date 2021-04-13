@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
-import Navbar from './Navbar';
 
 const App = () => {
   const [calculator, setCalculator] = useState({
@@ -20,11 +19,9 @@ const App = () => {
 
   return (
     <div className="container-fluid large">
-      <Navbar />
-
-      <div>
-        <h1 className="title">Project Calculator</h1>
-        <div className="calculator">
+      <div className="d-flex">
+        <h1 className="title mt-5 ml-5">Project Calculator</h1>
+        <div className="calculator mt-5">
           <Display
             result={`${total || ''}
           ${operation || ''}
