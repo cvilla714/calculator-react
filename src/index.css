@@ -99,8 +99,14 @@ button:focus {
 
 .main-title {
   font-size: 2.5rem;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .nav-link {
   font-size: 1.25rem;
+}
+
+.centro {
+  height: 70vh;
 }
