@@ -21,7 +21,7 @@ const App = () => {
     <div className="container-fluid large">
       <div className="row">
         <div className="col-sm-12 col-md-6">
-          <h1 className="title mt-5 ml-5">Project Calculator</h1>
+          <h1 className="title mt-5 ml-5">Let&apos;s do some math!</h1>
         </div>
         <div className="col-sm-12 col-md-6">
           <div className="calculator mt-5">
