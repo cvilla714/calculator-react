@@ -1,42 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+const App = () => {
+  const [calculator, setCalculator] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+  const handleClick = (operation) => {
+    setCalculator(calculate(calculator, operation));
+  };
 
-  handleClick(operation) {
-    this.setState((prevState) => calculate(prevState, operation));
-  }
+  const { total, next, operation } = calculator;
 
-  render() {
-    const { total, next, operation } = this.state;
-
-    return (
-      <div>
-        <h1 className="title">Project Calculator</h1>
-
-        <div className="calculator">
-          <Display
-            result={`${total || ''}
+  return (
+    <div className="container-fluid large">
+      <div className="row">
+        <div className="col-sm-12 col-md-6">
+          <h1 className="title mt-5 ml-5">Let&apos;s do some math!</h1>
+        </div>
+        <div className="col-sm-12 col-md-6">
+          <div className="calculator mt-5">
+            <Display
+              result={`${total || ''}
           ${operation || ''}
           ${(total && next) || ''}
           `}
-          />
-          <ButtonPanel clickHandler={this.handleClick} />
+            />
+            <ButtonPanel clickHandler={handleClick} />
+          </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
 export default App;

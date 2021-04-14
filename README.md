@@ -1,11 +1,14 @@
 # Project: Calculator
 
 > Project was about creating a calculator with React
-![screenshot](./app_screenshot.png)
+> ![screenshot](./app_screenshot.png)
 
 ## Built With
+
 - CSS
 - Javascript
+- Jess
+- React-Bootstrap
 - React
 
 ## Live Demo
@@ -32,6 +35,10 @@
 ### Usage
 
 **Once you have gone through the process of installing the code you now run this command `npm run start` this will start the app and a new window will open in your browser with the app ready to be use**
+
+### Testing
+
+**For testing just run the following command `npm run test` and after the first test has run please click the option 'a' to run the rest of the tests**
 
 ## Authors
 
