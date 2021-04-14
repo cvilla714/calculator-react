@@ -13,7 +13,7 @@ exports[`should render the correct content for the Calculator Page 1`] = `
       <h1
         className="title mt-5 ml-5"
       >
-        Project Calculator
+        Let's do some math!
       </h1>
     </div>
     <div
